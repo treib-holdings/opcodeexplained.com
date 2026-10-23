@@ -28,6 +28,7 @@ This opcode was designed to simplify and optimize multisig scripts in Taproot.
 - The operation is non-branching, but it can fail: an invalid signature fails the whole script. Only an empty signature adds 0 to the counter, which is how a key that did not sign is skipped (see the [BIP-342 rules for signature opcodes](https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki#rules-for-signature-opcodes)).
 - Enables native `m-of-n` logic without branching or stack juggling.
 - The final result can be compared to a threshold using `OP_EQUAL`, `OP_GREATERTHAN`, etc.
+- More information on this opcode can be found in the [LearnBitcoin glossary entry for the opcode](https://www.learnbitcoin.com/glossary/op-checksigadd).
 
 ## Examples
 
